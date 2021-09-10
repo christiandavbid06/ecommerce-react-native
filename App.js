@@ -58,7 +58,7 @@ export default function App() {
       {auth ? (
         <AppNavigation />
       ) : (
-        <Auth />
+        <Auth /> 
       )}
     </PaperProvider>
     </AuthContext.Provider>

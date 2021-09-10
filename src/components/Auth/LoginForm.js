@@ -10,10 +10,11 @@ import { loginApi } from '../../api/user'
 import { RootSiblingParent } from "react-native-root-siblings";
 import useAuth from '../../hooks/useAuth'
 
+
 export default function LoginForm(props) {
     const {changeForm} = props;
     const [loading, setLoading] = useState(false);
-
+    
     //Extraigo el auth Context
     const { login } = useAuth();
 

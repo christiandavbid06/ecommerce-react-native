@@ -13,7 +13,7 @@ export default function RegisterForm(props) {
     const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState(initialValues());
 
-    const formik = useFormik({
+    const formik = useFormik({ 
         initialValues: initialValues(),
         validationSchema: Yup.object(validationSchema()),
         onSubmit: async (formData) => {
